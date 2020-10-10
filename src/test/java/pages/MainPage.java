@@ -9,7 +9,7 @@ import org.openqa.selenium.By;
  **/
 public class MainPage {
 
-    public Button singUpFreeButton= new Button(By.xpath(" //img[@src='/Images/design/pagesignup.png']"),"[singUp Free] Button on Main Page");
+    public Button singUpFreeButton= new Button(By.xpath("//img[@src='/Images/design/pagelogin.png']"),"[Login] Button on Login");
 
     public MainPage(){}
 

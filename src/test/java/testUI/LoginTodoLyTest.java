@@ -31,12 +31,13 @@ public class LoginTodoLyTest {
     @Test
     public void verifyTheLoginUsingUserAndPassword() throws InterruptedException {
         mainPage.singUpFreeButton.click();
-        loginModalPage.fullNameTextBox.type("ucb100@ucb.com");
         loginModalPage.emailTextBox.type("ucb100@ucb.com");
         loginModalPage.passwordTextBox.type("ucb123");
-        loginModalPage.agreeTermsCheckBox.click();
         loginModalPage.signupButton.click();
-        // Verification
+        loginModalPage.addIniProject.click();
+        loginModalPage.nameProject.type("PROYECTO NUEVO 2");
+        loginModalPage.addProject.click();
+        //Verification
         Thread.sleep(2000);
         Assert.assertFalse("ERROR , no se pudo realizar el login!",loginModalPage.signupButton.isDisplayedOnPage());
     }

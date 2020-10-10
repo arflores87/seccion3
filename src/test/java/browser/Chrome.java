@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 public class Chrome implements  IBrowser {
     @Override
     public WebDriver create() {
-        String driverPath="C:\\Users\\Eynar\\Desktop\\UCBRepositorios\\vulnerability\\src\\test\\resources\\drivers\\chromedriver.exe";
+        String driverPath="C:\\Users\\Aldo Flores\\Documents\\GITHUB\\seccion3\\src\\test\\resources\\drivers\\chromedriver.exe";
         System.setProperty("webdriver.chrome.driver",driverPath);
         ChromeDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
